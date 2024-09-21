@@ -1,0 +1,6 @@
+@Gastronaut.Bootstrapper_HostAddress = http://localhost:5211
+
+GET {{Gastronaut.Bootstrapper_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

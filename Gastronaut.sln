@@ -1,8 +1,70 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{921805A2-8BE4-4776-A07B-63983C114FB0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{DF132731-C838-44F2-BDB3-59D1C761CC2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{3CB85E0B-DBEE-4E92-B2DA-1306F0736272}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bootstrapper", "Bootstrapper", "{F71887B5-6142-4E01-B808-26A2E5DDE065}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{E8D7FA98-C82F-4E73-9200-C557984BFF88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gastronaut.Abstraction", "src\Shared\Gastronaut.Abstraction\Gastronaut.Abstraction.csproj", "{D0DE3DC7-3647-40A3-8448-F4C1647AA5A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gastronaut.Infrastructure", "src\Shared\Gastronaut.Infrastructure\Gastronaut.Infrastructure.csproj", "{03D10E3A-C1CB-472D-BE0A-CE2CCF1F53A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gastronaut.Bootstrapper", "src\Bootstrapper\Gastronaut.Bootstrapper\Gastronaut.Bootstrapper.csproj", "{01DA8BD4-32CD-496A-AD28-7063462D71F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Users", "Users", "{CA352258-6FC1-48FB-96EA-58EBB44E136D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gastronaut.Modules.Users.Core", "src\Modules\Users\Gastronaut.Modules.Users.Core\Gastronaut.Modules.Users.Core.csproj", "{DD3CF068-3AD1-49A1-8F5F-781A7C97967D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gastronaut.Modules.Users.Infrastructure", "src\Modules\Users\Gastronaut.Modules.Users.Infrastructure\Gastronaut.Modules.Users.Infrastructure.csproj", "{D2C9921E-5D08-4A6A-AE21-DAD54E0F4461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gastronaut.Modules.Users.Api", "src\Modules\Users\Gastronaut.Modules.Users.Api\Gastronaut.Modules.Users.Api.csproj", "{1463BAE9-02E1-4594-B1DE-7B54DDA76F83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3CB85E0B-DBEE-4E92-B2DA-1306F0736272} = {921805A2-8BE4-4776-A07B-63983C114FB0}
+		{F71887B5-6142-4E01-B808-26A2E5DDE065} = {921805A2-8BE4-4776-A07B-63983C114FB0}
+		{E8D7FA98-C82F-4E73-9200-C557984BFF88} = {921805A2-8BE4-4776-A07B-63983C114FB0}
+		{D0DE3DC7-3647-40A3-8448-F4C1647AA5A3} = {E8D7FA98-C82F-4E73-9200-C557984BFF88}
+		{03D10E3A-C1CB-472D-BE0A-CE2CCF1F53A6} = {E8D7FA98-C82F-4E73-9200-C557984BFF88}
+		{01DA8BD4-32CD-496A-AD28-7063462D71F8} = {F71887B5-6142-4E01-B808-26A2E5DDE065}
+		{CA352258-6FC1-48FB-96EA-58EBB44E136D} = {3CB85E0B-DBEE-4E92-B2DA-1306F0736272}
+		{DD3CF068-3AD1-49A1-8F5F-781A7C97967D} = {CA352258-6FC1-48FB-96EA-58EBB44E136D}
+		{D2C9921E-5D08-4A6A-AE21-DAD54E0F4461} = {CA352258-6FC1-48FB-96EA-58EBB44E136D}
+		{1463BAE9-02E1-4594-B1DE-7B54DDA76F83} = {CA352258-6FC1-48FB-96EA-58EBB44E136D}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0DE3DC7-3647-40A3-8448-F4C1647AA5A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0DE3DC7-3647-40A3-8448-F4C1647AA5A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0DE3DC7-3647-40A3-8448-F4C1647AA5A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0DE3DC7-3647-40A3-8448-F4C1647AA5A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03D10E3A-C1CB-472D-BE0A-CE2CCF1F53A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03D10E3A-C1CB-472D-BE0A-CE2CCF1F53A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03D10E3A-C1CB-472D-BE0A-CE2CCF1F53A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03D10E3A-C1CB-472D-BE0A-CE2CCF1F53A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01DA8BD4-32CD-496A-AD28-7063462D71F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01DA8BD4-32CD-496A-AD28-7063462D71F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01DA8BD4-32CD-496A-AD28-7063462D71F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01DA8BD4-32CD-496A-AD28-7063462D71F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD3CF068-3AD1-49A1-8F5F-781A7C97967D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD3CF068-3AD1-49A1-8F5F-781A7C97967D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD3CF068-3AD1-49A1-8F5F-781A7C97967D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD3CF068-3AD1-49A1-8F5F-781A7C97967D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2C9921E-5D08-4A6A-AE21-DAD54E0F4461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2C9921E-5D08-4A6A-AE21-DAD54E0F4461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2C9921E-5D08-4A6A-AE21-DAD54E0F4461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2C9921E-5D08-4A6A-AE21-DAD54E0F4461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1463BAE9-02E1-4594-B1DE-7B54DDA76F83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1463BAE9-02E1-4594-B1DE-7B54DDA76F83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1463BAE9-02E1-4594-B1DE-7B54DDA76F83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1463BAE9-02E1-4594-B1DE-7B54DDA76F83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
